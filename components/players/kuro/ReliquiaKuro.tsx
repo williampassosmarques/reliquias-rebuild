@@ -1,6 +1,7 @@
 import { IKuro } from '../../../interfaces/players/IKuro'
 import DespertarDominio from '../../parts/DespertarDominio'
 import Durabilidade from '../../parts/Durabilidade'
+import Stage from '../../reliquia/Stage'
 
 interface Props {
   reliquia: IKuro

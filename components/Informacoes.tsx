@@ -7,7 +7,7 @@ interface Props {
 
 export default function Informacoes({ personagem }: Props) {
   return (
-    <div>
+    <div className="mb-5 border-b border-black">
       <p className="font-bold text-xl">Informações</p>
       {/*  INFORMACOES PESSOAIS */}
       <div>

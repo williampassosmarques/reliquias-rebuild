@@ -62,7 +62,12 @@ export const vigias: IFichaGeneric[] = [
     stage: {
       repel: true,
       track: true,
-      reverse: true
+      reverse: true,
+      consume: {
+        vanish: true,
+        heal: true,
+        gain: true
+      }
     },
     inventario: {
       equipamento: [],

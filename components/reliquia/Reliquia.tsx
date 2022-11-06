@@ -9,7 +9,7 @@ interface Props {
 export default function Reliquia({ reliquia }: Props) {
   return (
     <div>
-      <p className="font-bold text-xl">Reliquia</p>
+      <p className="font-bold text-xl text-yellow-500">Reliquia</p>
       <div>
         <p>
           <span className="font-bold">nome - </span>
@@ -41,6 +41,7 @@ export default function Reliquia({ reliquia }: Props) {
 
       {reliquia.despertar ? <Despertar reliquia={reliquia} /> : null}
       {reliquia.dominio ? <Dominio reliquia={reliquia} /> : null}
+      
     </div>
   )
 }

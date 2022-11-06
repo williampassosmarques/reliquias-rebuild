@@ -6,6 +6,7 @@ import Informacoes from './Informacoes'
 import Inventario from './inventario/Inventario'
 import BotaoVoltar from './parts/BotaoVoltar'
 import Reliquia from './reliquia/Reliquia'
+import Stage from './reliquia/Stage'
 
 interface Props {
   personagem: IFichaGeneric
@@ -31,11 +32,12 @@ export default function PersoComponent({ personagem }: Props) {
             </div>
             <Ficha personagem={personagem} />
           </div>
-          <div className="flex flex-col gap-10">
+          <div className="flex flex-col">
             <Informacoes personagem={personagem} />
             {personagem.reliquia ? (
               <Reliquia reliquia={personagem.reliquia} />
             ) : null}
+            {personagem.stage ? <Stage stage={personagem.stage} /> : null}
           </div>
         </div>
         <Inventario itens={personagem.inventario} />

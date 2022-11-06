@@ -71,6 +71,11 @@ export interface IStage {
   repel: boolean
   track: boolean
   reverse: boolean
+  consume?: {
+    vanish: boolean
+    heal: boolean
+    gain: boolean
+  }
 }
 
 export interface IDurabilidade {
