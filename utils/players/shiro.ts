@@ -5,8 +5,8 @@ export const Shiro: IFicha = {
     player: 'shiro',
     personagem: {
       nome: 'Heloisa',
-      nivel: 1,
-      xp: 80,
+      nivel: 2,
+      xp: 10 +10,
       informacoes: {
         aparencia: '',
         idade: 30,
@@ -29,17 +29,16 @@ export const Shiro: IFicha = {
     bonusMEN: 0,
     CARISMA: 10,
     bonusCAR: 0,
-    afinidade: 1
+    afinidade: 2
   },
   vida: {
     vida: 19,
     dano: 0,
-    armadura: 1,
+    armadura: 1 + 1,
     bonusArm: 0
   },
   reliquia: {
     nome: 'Pé de Coelho',
-    tipo: ['seila'],
     durabilidade: {
       total: 100,
       atual: 100

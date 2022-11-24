@@ -20,6 +20,6 @@ Devido ao ataque dos exploradores em MorningLand, imagina-se que eles estão se 
 
 ## Cidade dos Rabiscos
 
-### Recrutamento
+### Investigação
 
-Pela bom relacionamento que a cidade tem com os vigias, torna-se mais facil conseguir possiveis recrutas nela, conversar com o conselho da cidade e reunir candidatos não será um problema.
+Procurar pelo homem sem nome que faz encantamentos.

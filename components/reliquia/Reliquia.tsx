@@ -1,4 +1,5 @@
 import { IReliquiaGeneric } from '../../interfaces/IFichaGeneric'
+import breakText from '../../utils/functions/break'
 import Despertar from './Despertar'
 import Dominio from './Dominio'
 
@@ -7,6 +8,8 @@ interface Props {
 }
 
 export default function Reliquia({ reliquia }: Props) {
+  const breakDescricao = breakText(reliquia.descricao)
+
   return (
     <div>
       <p className="font-bold text-xl text-yellow-500">Reliquia</p>
@@ -15,10 +18,12 @@ export default function Reliquia({ reliquia }: Props) {
           <span className="font-bold">nome - </span>
           {reliquia.nome}
         </p>
-        <p>
-          <span className="font-bold">descrição - </span>
-          {reliquia.descricao}
-        </p>
+        <div>
+          <span className="font-bold">descrição: </span>
+          {breakDescricao?.map(text => {
+            return <p key={text}>{text}</p>
+          })}
+        </div>
         {reliquia.historia ? (
           <p>
             <span className="font-bold">história - </span>
@@ -41,7 +46,6 @@ export default function Reliquia({ reliquia }: Props) {
 
       {reliquia.despertar ? <Despertar reliquia={reliquia} /> : null}
       {reliquia.dominio ? <Dominio reliquia={reliquia} /> : null}
-      
     </div>
   )
 }

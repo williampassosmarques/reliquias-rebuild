@@ -6,7 +6,7 @@ export const Kuro: IFicha = {
     personagem: {
       nome: 'arthur jhonson',
       nivel: 2,
-      xp: 80,
+      xp: 130,
       informacoes: {
         aparencia: '',
         idade: 38,
@@ -85,6 +85,14 @@ export const Kuro: IFicha = {
     ]
   },
   habilidades: [
+    {
+      id: 0,
+      nome: 'Rei do Baile',
+      tipo: 'passivo',
+      descricao:
+        'tem menor chance de ficar bebado ao ingerir alcool, e quando bebe tem maior chance de rebolar a raba.',
+      requisitos: 'nenhum'
+    },
     {
       id: 1,
       nome: 'Bala Perfurante',

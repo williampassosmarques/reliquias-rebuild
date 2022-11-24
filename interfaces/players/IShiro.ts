@@ -2,7 +2,6 @@ import { IDurabilidade } from "../IFicha"
 
 export interface IShiro {
   nome: string
-  tipo: string[]
   durabilidade: IDurabilidade
   descricao: string
   visual: string

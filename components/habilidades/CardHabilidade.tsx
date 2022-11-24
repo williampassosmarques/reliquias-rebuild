@@ -2,12 +2,14 @@ import { IHabilidade } from '../../interfaces/IFicha'
 import { useState } from 'react'
 import classNames from 'classnames'
 import ButtonCD from './ButtonCD'
+import breakText from '../../utils/functions/break'
 
 interface Props {
   habilidade: IHabilidade
 }
 
 export default function CardHabilidade({ habilidade }: Props) {
+  const breakDescricao = breakText(habilidade.descricao)
   const [cd, setCd] = useState(false)
 
   return (
@@ -21,7 +23,7 @@ export default function CardHabilidade({ habilidade }: Props) {
       >
         <div
           className={classNames({
-            'relative bg-white border border-black z-10 p-2 w-60': true,
+            'relative bg-white border border-black z-10 p-2 min-w-60': true,
             'text-red-500 border-red-500': cd
           })}
         >
@@ -34,7 +36,13 @@ export default function CardHabilidade({ habilidade }: Props) {
           {habilidade.efeitos ? <p>efeitos - {habilidade.efeitos}</p> : null}
           {habilidade.dados ? <p>dados - {habilidade.dados}</p> : null}
           <br />
-          <p>{habilidade.descricao}</p>
+          <div>
+            {breakDescricao?.map(text => {
+              return <p key={text}>{text}</p>
+            })}
+          </div>
+          <br />
+          <br />
 
           {habilidade.cd ? (
             <div className="absolute right-2 bottom-2">

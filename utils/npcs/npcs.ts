@@ -9,8 +9,9 @@ export const NPCS: IFichaGeneric[] = [
         nivel: 2,
         informacoes: {
           idade: 18,
-          aparencia: '',
-          personalidade: '',
+          aparencia:
+            'corte militar, usa regata branca, um colar, tem pele morena.',
+          personalidade: 'envergonhado',
           historia: '',
           profissao: 'guia/trombadinha'
         },
@@ -38,12 +39,15 @@ export const NPCS: IFichaGeneric[] = [
     },
     reliquia: {
       nome: 'moeda',
-      historia: '',
-      descricao: '',
+      historia:
+        'Recebeu de seu pai que foi expulso da cidade por tentar roubar do prefeito.',
+      descricao:
+        'Pode ser feita uma aposta escolhendo cara ou coroa. O que foi apostado acontecerá desde que seja possível.\n Recebe uma ação extra se for uma aposta.',
       despertar: {
         ativado: false,
-        nome: '',
-        descricao: ''
+        nome: 'Gambler',
+        descricao:
+          'Ataques de Miguel tem 50% chance de quebrar, armadura, itens, barreiras.'
       }
     },
     inventario: {
@@ -228,7 +232,8 @@ export const NPCS: IFichaGeneric[] = [
         nivel: 4,
         informacoes: {
           idade: 42,
-          aparencia: 'MILF',
+          aparencia:
+            'Cabelos negros comprido liso e brilhante, maquiagem leve, brincos pequenos com pedras brilhantes, unhas grandes vermelhas e usa um vestido colado vermelho.',
           personalidade: `odeia ser chamada de senhora ou ser lembrada de sua idade. "Eterna Jovem".`,
           historia: `"Chefe" das meretizes, no cabaré "Fada Sensata"`,
           profissao: 'Meretriz'
@@ -267,9 +272,9 @@ export const NPCS: IFichaGeneric[] = [
         nome: 'Lexie',
         nivel: 1,
         informacoes: {
-          idade: 18,
-          aparencia: 'ruiva',
-          personalidade: '',
+          idade: 19,
+          aparencia: 'ruiva de olhos verdes, top e saia godê curta, baixinha.',
+          personalidade: 'gentil',
           historia: '',
           profissao: 'Meretriz'
         },
@@ -307,9 +312,10 @@ export const NPCS: IFichaGeneric[] = [
         nome: 'Mind',
         nivel: 1,
         informacoes: {
-          idade: 18,
-          aparencia: 'loira',
-          personalidade: '',
+          idade: 24,
+          aparencia:
+            'loira olhos violeta, cabelo, shortinho e camiseta com as pontas amarradas acima do umbigo.',
+          personalidade: 'brava, esquentada',
           historia: '',
           profissao: 'Meretriz'
         },
@@ -348,8 +354,10 @@ export const NPCS: IFichaGeneric[] = [
         nivel: 20,
         informacoes: {
           idade: 53,
-          aparencia: '',
-          personalidade: '',
+          aparencia:
+            'cabelo baixo preto, cavanhaque, olhos verdes, usa sobretudo preto.',
+          personalidade:
+            'apostador convicto, gosta de jogos, extrovertido, irreverente',
           historia: '',
           profissao: 'prefeito'
         },
@@ -408,23 +416,23 @@ export const NPCS: IFichaGeneric[] = [
     info: {
       personagem: {
         nome: 'Mariano',
-        nivel: 1,
+        nivel: 4,
         informacoes: {
           idade: 49,
-          aparencia: '',
-          personalidade: '',
-          historia: `Dono do Bar "Fundo do Poço".`,
+          aparencia: 'cabelo comprido amarrado atras, alto e musculoso.',
+          personalidade: 'gentil, esquentadinho',
+          historia: `Ajudante"Pasha".`,
           profissao: 'Dono de Bar'
         },
         cidadeNatal: 'cidade da meia noite'
       }
     },
     atributos: {
-      FORCA: 10,
+      FORCA: 12,
       bonusFOR: 0,
-      DESTREZA: 12,
+      DESTREZA: 10,
       bonusDES: 0,
-      SAUDE: 12,
+      SAUDE: 14,
       bonusSAU: 0,
       MENTE: 10,
       bonusMEN: 0,
@@ -432,9 +440,9 @@ export const NPCS: IFichaGeneric[] = [
       bonusCAR: 0
     },
     vida: {
-      vida: 19,
+      vida: 30,
       dano: 0,
-      armadura: 0,
+      armadura: 1,
       bonusArm: 0
     },
     inventario: {
@@ -792,6 +800,47 @@ export const NPCS: IFichaGeneric[] = [
       repel: false,
       track: false,
       reverse: false
+    },
+    inventario: {
+      equipamento: [],
+      mochila: []
+    },
+    habilidades: []
+  },
+  {
+    id: '16',
+    info: {
+      personagem: {
+        nome: 'Jill',
+        nivel: 4,
+        informacoes: {
+          idade: 21,
+          aparencia:
+            'cabelo preto com franja, magra, olhos negros, usa terninho.',
+          personalidade: `boa ouvinte, simpática, odeia pessoas chatas`,
+          historia: `Ela é secretária do Prefeito e durante a noite trabalha no Bar "Pasha"`,
+          profissao: 'secretaria/bartender'
+        },
+        cidadeNatal: 'cidade da meia noite'
+      }
+    },
+    atributos: {
+      FORCA: 6,
+      bonusFOR: 0,
+      DESTREZA: 14,
+      bonusDES: 0,
+      SAUDE: 14,
+      bonusSAU: 0,
+      MENTE: 10,
+      bonusMEN: 0,
+      CARISMA: 16,
+      bonusCAR: 0
+    },
+    vida: {
+      vida: 30,
+      dano: 0,
+      armadura: 2,
+      bonusArm: 0
     },
     inventario: {
       equipamento: [],

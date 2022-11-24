@@ -21,29 +21,31 @@ export default function Stage({ stage }: Props) {
           <span className="font-bold">reverse </span>
           {stage.reverse ? <span>✔️</span> : <span>❌</span>}
         </p>
-        <div>
-          <p className="font-bold text-lg text-purple-500">Consume</p>
+        {stage.consume ? (
           <div>
-            {stage.consume?.vanish ? (
-              <p>
-                <span className="font-bold">vanish </span>
-                {stage.consume.vanish ? <span>✔️</span> : <span>❌</span>}
-              </p>
-            ) : null}
-            {stage.consume?.heal ? (
-              <p>
-                <span className="font-bold">heal </span>
-                {stage.consume.heal ? <span>✔️</span> : <span>❌</span>}
-              </p>
-            ) : null}
-            {stage.consume?.gain ? (
-              <p>
-                <span className="font-bold">gain </span>
-                {stage.consume.gain ? <span>✔️</span> : <span>❌</span>}
-              </p>
-            ) : null}
+            <p className="font-bold text-lg text-purple-500">Consume</p>
+            <div>
+              {stage.consume?.vanish ? (
+                <p>
+                  <span className="font-bold">vanish </span>
+                  {stage.consume.vanish ? <span>✔️</span> : <span>❌</span>}
+                </p>
+              ) : null}
+              {stage.consume?.heal ? (
+                <p>
+                  <span className="font-bold">heal </span>
+                  {stage.consume.heal ? <span>✔️</span> : <span>❌</span>}
+                </p>
+              ) : null}
+              {stage.consume?.gain ? (
+                <p>
+                  <span className="font-bold">gain </span>
+                  {stage.consume.gain ? <span>✔️</span> : <span>❌</span>}
+                </p>
+              ) : null}
+            </div>
           </div>
-        </div>
+        ) : null}
       </div>
     </div>
   )

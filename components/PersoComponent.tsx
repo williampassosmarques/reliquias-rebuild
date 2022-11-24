@@ -18,7 +18,7 @@ export default function PersoComponent({ personagem }: Props) {
       <Head>
         <title>{personagem.info.personagem.nome}</title>
       </Head>
-      <div className="relative pt-10">
+      <div className="relative py-10">
         <div className="max-w-7xl mx-auto flex gap-5">
           <div>
             <h2 className="font-bold text-2xl">
@@ -32,7 +32,7 @@ export default function PersoComponent({ personagem }: Props) {
             </div>
             <Ficha personagem={personagem} />
           </div>
-          <div className="flex flex-col">
+          <div className="flex flex-col w-full">
             <Informacoes personagem={personagem} />
             {personagem.reliquia ? (
               <Reliquia reliquia={personagem.reliquia} />

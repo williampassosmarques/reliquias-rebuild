@@ -1,11 +1,12 @@
 import { IFicha } from '../../interfaces/IFicha'
 import { IFichaGeneric } from '../../interfaces/IFichaGeneric'
+import { IInimigo } from '../../utils/inimigos/inimigo'
 import Afinidade from './Afinidade'
 import Atributo from './Atributo'
 import Vida from './Vida'
 
 interface Props {
-  personagem: IFicha | IFichaGeneric
+  personagem: IFicha | IFichaGeneric | IInimigo
 }
 
 export default function Ficha({ personagem }: Props) {

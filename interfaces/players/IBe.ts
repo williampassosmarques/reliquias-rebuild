@@ -1,23 +1,21 @@
-import { IDurabilidade } from "../IFicha"
+import { IDurabilidade } from '../IFicha'
 
-export interface IOreaninho {
-  nome: string
+export interface IBe {
+  nome: String
   durabilidade: IDurabilidade
   descricao: string
-  visual: string
-  dados:string
+  visual?: string
   despertar: {
     ativado: boolean
     nome: string
-    visual: string
+    visual?: string
     descricao: string
-    dados: string
   }
   dominio: {
     ativado: boolean
     nome: string
     area: string
-    visual: string
+    visual?: string
     descricao: string
   }
 }

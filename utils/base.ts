@@ -36,29 +36,6 @@ const Base: IFichaGeneric[] = [
       armadura: 0,
       bonusArm: 0
     },
-    reliquia: {
-      nome: '',
-      tipo: [''],
-      dados: '',
-      historia: '',
-      descricao: '',
-      despertar: {
-        ativado: false,
-        nome: '',
-        descricao: ''
-      },
-      dominio: {
-        ativado: false,
-        nome: '',
-        area: '',
-        descricao: ''
-      }
-    },
-    stage: {
-      repel: false,
-      track: false,
-      reverse: false
-    },
     inventario: {
       equipamento: [],
       mochila: []

@@ -110,7 +110,7 @@ export const vigias: IFichaGeneric[] = [
     vida: {
       vida: 82,
       dano: 0,
-      armadura: 0,
+      armadura: 0 + 3,
       bonusArm: 0
     },
     reliquia: {
@@ -118,7 +118,7 @@ export const vigias: IFichaGeneric[] = [
       historia:
         'A cartola é uma herança de familia passada por gerações para o proximo mágico da familia.',
       descricao:
-        'Pode fazer magicas. Seus ataque podem ser jogados com carisma.',
+        'Pode fazer magias. Seus ataques podem ser jogados com carisma. Tem imunidade a habilidades mentais.',
       despertar: {
         ativado: false,
         nome: 'Smoking Pinguim',
@@ -137,10 +137,51 @@ export const vigias: IFichaGeneric[] = [
       track: true
     },
     inventario: {
-      equipamento: [],
+      equipamento: [
+        {
+          nome: 'Fraque',
+          status: '+3ARM'
+        }
+      ],
       mochila: []
     },
-    habilidades: []
+    habilidades: [
+      {
+        id: 0,
+        nome: 'Imunidade Mental',
+        requisitos: 'nenhum',
+        tipo: 'passivo',
+        descricao: 'Não é afetado por habilidade mentais.'
+      },
+      {
+        id: 1,
+        nome: 'Coelho Explosivo',
+        requisitos: 'nenhum',
+        tipo: 'arremessavel',
+        dados: '1d6+CAR',
+        efeitos: 'atordoar(1turno)',
+        descricao: 'lança um coelho em direção dos\n inimigos.',
+        cd: 2
+      },
+      {
+        id: 2,
+        nome: 'Espada Balão',
+        requisitos: 'nenhum',
+        tipo: 'item',
+        dados: '2d6+CAR',
+        descricao:
+          'cria uma arma de balões.\n pode esticar ela para fazer um ataque\n a distância mas ela ira estourar.'
+      },
+      {
+        id: 3,
+        nome: 'Sumiu!!!',
+        requisitos: 'nenhum',
+        tipo: 'locomoção',
+        descricao:
+          'pode se teletransportar em uma distância\n de 10m sem preparação.',
+        cd: 1
+      }
+    ]
   },
   {
     id: '3',
@@ -154,7 +195,7 @@ export const vigias: IFichaGeneric[] = [
             '(Gyaru)\n cabelo loiro curto (pelo ombros), olhos castanhos, usa maquiagem chamativa além de ter unhas longas e coloridas. Tem o corpo magro e defino.\n Usar short curto, um uma jaqueta curta verde com uma camiseta acima do umbigo.(tem um piercing no umbigo)',
           personalidade: 'séria, gentil e objetiva',
           historia:
-            'Começou a dançar ballet na escola de dança de sua tia. Lá conheceu sua melhor amiga e futuro amor Erika.\n Anna fugiu de sua cidade (Cidade dos Rabiscos) quando começou a ser caçada pelos Exploradores, por medo de colocar a vida das pessoas em sua volta em perigo. Se juntou aos Vigias após ser recrutada por Lissandra, uma falecida integrante.'
+            'Começou a dançar ballet na escola de dança de sua tia. Lá conheceu sua melhor amiga e futuro amor Erika.\n Anna fugiu de sua cidade (reino das luzes) quando começou a ser caçada pelos Exploradores, por medo de colocar a vida das pessoas em sua volta em perigo. Se juntou aos Vigias após ser recrutada por Lissandra, uma falecida integrante.'
         }
       }
     },
@@ -163,9 +204,9 @@ export const vigias: IFichaGeneric[] = [
     },
     atributos: {
       FORCA: 14,
-      bonusFOR: 0,
+      bonusFOR: 2 + 2 + 2,
       DESTREZA: 18,
-      bonusDES: 0,
+      bonusDES: 2 + 2,
       SAUDE: 16,
       bonusSAU: 0,
       MENTE: 10,
@@ -176,18 +217,17 @@ export const vigias: IFichaGeneric[] = [
     },
     vida: {
       vida: 98,
-      dano: 0,
-      armadura: 3,
+      dano: 11,
+      armadura: 3 + 6,
       bonusArm: 0
     },
     reliquia: {
       nome: 'Sapatilhas de Ballet',
       visual: 'sapatilha rosa.',
-      dados: '',
       historia:
         'Foram um presente de sua tia(e tambem professora de Ballet) quando era mais nova.',
       descricao:
-        'Pode saltar mais alto, chutes são mais fortes e\n faz menos barulho com os pés.',
+        'Pode saltar mais alto, chutes são mais fortes e faz menos barulho com os pés.',
       despertar: {
         ativado: false,
         nome: 'Symphonia',
@@ -210,7 +250,12 @@ export const vigias: IFichaGeneric[] = [
       reverse: true
     },
     inventario: {
-      equipamento: [],
+      equipamento: [
+        {
+          nome: 'ballet armor',
+          status: '+6ARM'
+        }
+      ],
       mochila: []
     },
     habilidades: [
@@ -221,7 +266,7 @@ export const vigias: IFichaGeneric[] = [
         requisitos: 'Nenhum',
         dados: '2d8+FOR',
         efeitos: '',
-        descricao: '',
+        descricao: 'CHUTÃO',
         cd: 0
       },
       {
@@ -243,6 +288,15 @@ export const vigias: IFichaGeneric[] = [
         efeitos: 'sangramento(1d6)',
         descricao: '',
         cd: 0
+      },
+      {
+        id: 4,
+        nome: 'Lâmina Defensiva',
+        tipo: 'Defesa',
+        requisitos: 'Despertar',
+        efeitos: 'reflete o ataque',
+        descricao: 'Pode ser usado como resposta.',
+        cd: 3
       }
     ]
   },
@@ -281,7 +335,7 @@ export const vigias: IFichaGeneric[] = [
     vida: {
       vida: 122,
       dano: 0,
-      armadura: 6,
+      armadura: 6 + 9,
       bonusArm: 0
     },
     reliquia: {
@@ -309,7 +363,12 @@ export const vigias: IFichaGeneric[] = [
       reverse: false
     },
     inventario: {
-      equipamento: [],
+      equipamento: [
+        {
+          nome: 'MAROMBA ARMOR',
+          status: '+9 ARM'
+        }
+      ],
       mochila: []
     },
     habilidades: [
@@ -318,10 +377,21 @@ export const vigias: IFichaGeneric[] = [
         nome: 'Soco',
         tipo: 'fisico',
         requisitos: 'nenhum',
-        dados: '1d12',
+        dados: '1d12+FOR',
         efeitos: 'empurrão',
         descricao: '',
         cd: 0
+      },
+      {
+        id: 2,
+        nome: 'Saitama',
+        tipo: 'fisico',
+        requisitos: 'Despertar',
+        dados: '3d12+FOR',
+        efeitos: 'empurrão',
+        descricao:
+          'não pode ser defendido, alvo tem que tira no minimo 16 pra desviar.',
+        cd: 5
       }
     ]
   },
@@ -382,7 +452,7 @@ export const vigias: IFichaGeneric[] = [
       }
     },
     stage: {
-      repel: false,
+      repel: true,
       track: true,
       reverse: true
     },
@@ -396,11 +466,63 @@ export const vigias: IFichaGeneric[] = [
         nome: 'Bela Adormecida',
         tipo: 'controle',
         requisitos: 'despertar',
-        dados: 'afinidade',
-        efeitos: 'sleep',
+        efeitos: 'sono',
         descricao:
-          'O alvo entra em sono profundo e só pode ser acordado com um beijo.',
+          'O alvo entra em sono profundo e só\n pode ser acordado com um beijo.',
         cd: 10
+      },
+      {
+        id: 2,
+        nome: 'Lobo Mau',
+        tipo: 'invocação',
+        requisitos: 'despertar',
+        descricao: 'invova o Lobo Mau',
+        cd: 3
+      },
+      {
+        id: 3,
+        nome: 'Rapunzel',
+        tipo: 'controle',
+        requisitos: 'despertar',
+        efeitos: 'enraizamento(3 turnos)',
+        descricao: '',
+        cd: 3
+      },
+      {
+        id: 4,
+        nome: 'Gigante do Pé de Feijão',
+        tipo: 'ataque',
+        requisitos: 'despertar',
+        dados: '3d6+MEN',
+        efeitos: 'enraizamento(3 turnos)',
+        descricao: 'os alvos recebem um pisão de um gigante.',
+        cd: 10
+      },
+      {
+        id: 4,
+        nome: 'Pé de Feijão',
+        tipo: 'torre',
+        requisitos: 'despertar',
+        dados: '1d6+MEN',
+        descricao:
+          'invoca um pé de feijão que\n pode atacar usando suas raízes.',
+        cd: 2
+      },
+      {
+        id: 5,
+        nome: 'Pinóquio',
+        tipo: 'encantamento',
+        requisitos: 'despertar',
+        descricao: 'O nariz do alvo cresce se mentir'
+      },
+      {
+        id: 6,
+        nome: 'Botas do Gato',
+        tipo: 'encantamento',
+        requisitos: 'despertar',
+        efeitos: 'dobra destreza(4turnos)',
+        descricao: '',
+        cd: 4
       }
     ]
   },
@@ -412,9 +534,10 @@ export const vigias: IFichaGeneric[] = [
         nivel: 4,
         informacoes: {
           idade: 16,
-          aparencia: '',
-          personalidade: '',
-          historia: ''
+          aparencia:
+            'cabelo roxo com maria chiquinha, usa um vetido preto de mangas compridas cheio de babados, botas altas com meias brancas acima dos joelhos.',
+          personalidade: 'obscura, alto-astral',
+          historia: 'Harry salvou ela de ser capturada pelos Exploradores'
         }
       }
     },
@@ -437,12 +560,13 @@ export const vigias: IFichaGeneric[] = [
     vida: {
       vida: 26,
       dano: 0,
-      armadura: 0,
+      armadura: 0 + 3,
       bonusArm: 0
     },
     reliquia: {
       nome: 'Guarda Chuva',
       dados: '1d4',
+      visual: 'preto cheio de babados',
       historia: '',
       descricao:
         'Permitia Emilia e qualquer pessoa que ela estiver tocando flutuar.',
@@ -452,6 +576,12 @@ export const vigias: IFichaGeneric[] = [
         visual: 'Ganha o dobro do tamanho e recebe lâminas em suas hastes.',
         descricao:
           'É capaz de manipular o vento, até mesmo podendo gerar tufões.'
+      },
+      dominio: {
+        ativado: false,
+        nome: '',
+        area: '',
+        descricao: ''
       }
     },
     stage: {
@@ -460,10 +590,32 @@ export const vigias: IFichaGeneric[] = [
       reverse: false
     },
     inventario: {
-      equipamento: [],
-      mochila: []
+      equipamento: [
+        {
+          nome: 'Vestido Lolita',
+          status: '+3 ARM'
+        }
+      ],
+      mochila: [
+        {
+          nome: 'ouro',
+          quantidade: 300,
+          descricao: 'dinheiro'
+        }
+      ]
     },
-    habilidades: []
+    habilidades: [
+      {
+        id: 1,
+        nome: 'repelir',
+        requisitos: 'nenhum',
+        dificuldade: 'depende do ataque recebido',
+        cd: 2,
+        tipo: 'defesa',
+        descricao:
+          'Emilia gira o guarda-chuva\n podendo ser usado como defesa contra\n ataques de longa distância.'
+      }
+    ]
   },
   {
     id: '7',
@@ -574,9 +726,10 @@ export const vigias: IFichaGeneric[] = [
         nome: 'Eleanor',
         nivel: 10,
         informacoes: {
-          idade: 35,
-          aparencia: 'MILF',
-          personalidade: '',
+          idade: 41,
+          aparencia:
+            'cabelo castaho claro pelos ombros, olhos verdes. corpo voluptuoso, 1.79m, usa um vestido longo verde.',
+          personalidade: 'cuidadosa, mãe',
           historia: ''
         }
       }
@@ -642,10 +795,11 @@ export const vigias: IFichaGeneric[] = [
         nome: 'Joseph',
         nivel: 12,
         informacoes: {
-          idade: 23,
-          aparencia: '',
-          personalidade: '',
-          historia: ''
+          idade: 27,
+          aparencia:
+            'usa óculos, cabelo curto raspado dos lados, usa calça e blusa social com um colete por cima além de gravata. 1.81m.',
+          personalidade: 'frio e calculista',
+          historia: 'sua cidade foi salva por Musashi.'
         }
       }
     },
@@ -781,7 +935,7 @@ export const vigias: IFichaGeneric[] = [
         informacoes: {
           idade: 19,
           aparencia:
-            'Cabelo curto escuro, olhos castanhos, pele bronzeada e corpo bem definido. Usa um fone de ouvido velho e um macacão vermelho normamelmente sujo.',
+            'Cabelo curto escuro, olhos castanhos, pele morena e corpo bem definido. Usa um fone de ouvido velho e um macacão jardineiro preto e camiseta preta de manga comprida, na perna direita ela tem uma espece de caixinha presa com uma superficie transparente onde é possível ver cds. normamelmente está suja de graxa.',
           personalidade: 'Animada, excentrica, esforçada, criativa',
           historia:
             'O pai de Nina era um Portador, ele usava os fones que Nina carraga com ela. Ele foi morto pelos exploradores quando Nina ainda era uma criança. Quando cresceu, ela decidiu tentar se tornar parte dos vigias para poder se vingar dos exploradores que mataram seu pai, mas mesmo carregando os fones dele, Nina não se tornou uma portadora, assim ela acabou virando uma suporte.'
@@ -846,10 +1000,24 @@ export const vigias: IFichaGeneric[] = [
           nome: `CD's músicais`,
           quantidade: 'vários',
           descricao: 'música'
+        },
+        {
+          nome: 'kit de primeiros socorros',
+          quantidade: 3,
+          descricao: 'permite 4 usos'
         }
       ]
     },
-    habilidades: []
+    habilidades: [
+      {
+        id: 0,
+        nome: 'olha o som',
+        tipo: 'passivo',
+        requisitos: 'fones',
+        efeitos: 'aumenta chance de percepção',
+        descricao: 'Nina coloca músicas para o grupo ouvir.'
+      }
+    ]
   },
   {
     id: '12',
@@ -859,9 +1027,11 @@ export const vigias: IFichaGeneric[] = [
         nivel: 14,
         informacoes: {
           idade: 28,
-          aparencia: '',
-          personalidade: '',
-          historia: ''
+          aparencia:
+            'Cabelo castanho trançado, peitos pequenos, 1.60 altura, olhos negros.',
+          personalidade: 'calma, focacada',
+          historia:
+            'Sua cidade foi destruida por Exploradores assim decidiu se juntar aos Vigias. É uma boa costureira.'
         }
       }
     },
@@ -917,5 +1087,122 @@ export const vigias: IFichaGeneric[] = [
       ]
     },
     habilidades: []
+  },
+  {
+    id: '13',
+    info: {
+      personagem: {
+        nome: 'Pierre',
+        nivel: 6,
+        informacoes: {
+          idade: 29,
+          aparencia:
+            'cabelo vermelho espetado, usa uma faixa na cabeça, fisico forte, barba por fazer. Usa dólmã.',
+          personalidade:
+            'brabo, não gosta que falem mal de sua comida, confiável, gosta de alcool',
+          historia: ''
+        }
+      }
+    },
+    vigia: {
+      posicao: 'suporte'
+    },
+    atributos: {
+      FORCA: 10,
+      bonusFOR: 0,
+      DESTREZA: 14,
+      bonusDES: 0,
+      SAUDE: 14,
+      bonusSAU: 0,
+      MENTE: 10,
+      bonusMEN: 0,
+      CARISMA: 14,
+      bonusCAR: 0,
+      afinidade: 12
+    },
+    vida: {
+      vida: 40,
+      dano: 0,
+      armadura: 2 + 3,
+      bonusArm: 0
+    },
+    reliquia: {
+      nome: 'Colher de Pau',
+      historia: '',
+      descricao: 'Comidas feitas por Pierre dão Buffs.',
+      dados: '1d2',
+      despertar: {
+        ativado: false,
+        nome: 'MasterChef',
+        descricao:
+          'Consegue produzir pratos instantaneamente se possuir os ingredientes. Gasta muita estâmina.'
+      },
+      dominio: {
+        ativado: false,
+        nome: 'Restaurant',
+        area: 'sala',
+        descricao:
+          'Produz 3 clones de si mesmo.\n Cada clone recebe uma cópia de sua reliquia e podem despertar'
+      }
+    },
+    inventario: {
+      equipamento: [
+        {
+          nome: 'Dólmã',
+          status: '+3 ARM'
+        }
+      ],
+      mochila: [
+        {
+          nome: 'kit de tempeiros',
+          quantidade: 'muitos',
+          descricao: 'tempeiros variados'
+        },
+        {
+          nome: 'panelas',
+          quantidade: 1,
+          descricao: 'panelas'
+        },
+        {
+          nome: 'mini fogão',
+          quantidade: 1,
+          descricao: 'mini fogão'
+        }
+      ]
+    },
+    habilidades: [
+      {
+        id: 0,
+        nome: 'marmita',
+        requisitos: 'ingredientes',
+        tipo: 'buff',
+        efeitos: 'cura completamente e reduz a fadiga',
+        descricao: 'Panela velha faz comida boa.'
+      },
+      {
+        id: 1,
+        nome: 'curry',
+        requisitos: 'ingredientes',
+        tipo: 'buff',
+        efeitos: 'regeneração(1d4) 5 turnos',
+        descricao: 'Panela velha faz comida boa.'
+      },
+      {
+        id: 2,
+        nome: 'feijoada',
+        requisitos: 'ingredientes',
+        tipo: 'buff',
+        efeitos: 'dano(1d4) 3 turnos',
+        descricao: 'Panela velha faz comida boa.'
+      },
+      {
+        id: 3,
+        nome: 'bomba de chocolate',
+        requisitos: 'ingredientes',
+        tipo: 'explosivo',
+        efeitos: 'atordoamento 2 turnos',
+        descricao: 'Tenho ataques tambem.'
+      }
+    ]
   }
 ]

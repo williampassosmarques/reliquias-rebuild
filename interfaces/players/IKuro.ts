@@ -2,7 +2,6 @@ import { IDurabilidade } from '../IFicha'
 
 export interface IKuro {
   nome: string
-  tipo: string[]
   durabilidade: IDurabilidade
   dados: string
   descricao: string

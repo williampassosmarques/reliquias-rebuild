@@ -2,7 +2,6 @@ import { IDurabilidade } from "../IFicha"
 
 export interface IPoldrin {
   nome: string
-  tipo: string[]
   durabilidade: IDurabilidade
   descricao: string
   visual: string

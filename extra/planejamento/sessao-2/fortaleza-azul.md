@@ -10,5 +10,7 @@ id2-->id2a[chama muita<br> atenção]-->| pode falhar<br> na missão| E
 id3-->id3a[100% de chance<br> de chance de descobrir<br> algo se ajudar o vendedor]
 id1a -.->|descobriu| F[descobrir informação]
 id3a --> F
-F-->|chande de haver<br> batalha| G[sair da fortaleza]-->H[voltar para a<br> base dos vigias]
+F-->G[fortaleza confrontar general]-->|armadilha|H[ocorre batalha]
+H-->|nina se sacrifica<br/> sem os players saberem|I[fugir]
+I-->J[Harry aparece para salvar os players]
 ```

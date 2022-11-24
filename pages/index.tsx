@@ -20,6 +20,9 @@ export default function Home() {
         <Link className="hover:underline" href="./npcs">
           NPCS
         </Link>
+        <Link className="hover:underline" href="./inimigos">
+          Inimigos
+        </Link>
       </div>
     </>
   )

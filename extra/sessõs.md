@@ -15,4 +15,14 @@
 
 ## Sessão 2
 
+-
 
+## Sessão 3
+
+- Julian recebeu um cartão de "indenização dos vigias", quando entregue ao prefeito, garante concerto em qualquer coisa prejudicada.
+- Ajudaram a dona do Cabaré a resolver o problema com os Mafiosos
+- Chefe detido, 3 capangas detidos e 1 capanga morto.
+- Interrogando o chefe descobriram que ele possuia um cartão de "indenização dos vigias", que foi entregue por um homem
+  "alto e musculoso", que havia entrado em sua sede e metido a porrada em geral.
+- Dona do Cabaré ficou muito chateada com a forma como o grupo resolveu o problema.
+- O Prefeito chega no local, com a frase "estou decepcionado"

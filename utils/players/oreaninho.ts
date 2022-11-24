@@ -5,8 +5,8 @@ export const Oreaninho: IFicha = {
     player: 'oreaninho',
     personagem: {
       nome: 'Xavier Eisfesto',
-      nivel: 1,
-      xp: 80,
+      nivel: 2,
+      xp: 20 + 10,
       informacoes: {
         aparencia: '',
         idade: 0,
@@ -31,7 +31,7 @@ export const Oreaninho: IFicha = {
     bonusMEN: 0,
     CARISMA: 16,
     bonusCAR: 0,
-    afinidade: 1
+    afinidade: 2
   },
   vida: {
     vida: 19,
@@ -41,7 +41,6 @@ export const Oreaninho: IFicha = {
   },
   reliquia: {
     nome: 'Tesoura Desfiadeira',
-    tipo: ['dano', 'cortante'],
     durabilidade: {
       total: 100,
       atual: 100
@@ -54,7 +53,7 @@ export const Oreaninho: IFicha = {
       nome: '',
       visual: '(tipo kill la kill)',
       descricao:
-        'Tesoura cresse e suas feridas deixam o agredido mais sensivel a dano.',
+        'Tesoura cresce e suas feridas deixam o alvo mais sensivel a dano. Cada vez que acerta o alvo ele recebe um stack, cada stack adiciona 2 de dano. Caso fique mais de 1 turnos sem bater no alvo, ele perde todos os stacks.',
       dados: '2d6'
     },
     dominio: {
@@ -72,6 +71,11 @@ export const Oreaninho: IFicha = {
         nome: 'ouro',
         quantidade: 10,
         descricao: 'dinheiro'
+      },
+      {
+        nome: 'luvas de borracha',
+        quantidade: 'par',
+        descricao: 'protege parcialmente contra choques'
       }
     ]
   },
