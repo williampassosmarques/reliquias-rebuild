@@ -40,23 +40,22 @@ export const vigias: IFichaGeneric[] = [
       bonusArm: 0
     },
     reliquia: {
-      nome: 'Bengala que vira Rapieira',
-      dados: '1d12',
-      historia: 'Recebeu de seu antigo mestre de artes marciais.',
+      nome: 'Broken/Quebrado',
+      historia:
+        'Antigamente Musashi possuia uma bengala que era sua reliquia, mas ela quebrou, assim Musashi conseguiu se tornar um Broken (que é extremamente raro).',
       descricao:
-        'Ataques ignoram armadura. Pode usar FOR ao inves de DES para bater com a rapieira.',
+        'Musashi usa as pontas de seus dedos para perfurar os inimigos, cada ataque adiciona uma marca no inimigo. Para cada marca ele pode realizar +1 ataque neste inimigo. Esses ataques contam como acões extras. Se houver mais de 10 marcas no alvo, Musashi pode retirar todas as marcas desse alvo, assim se tornando imune a qualquer efeito proveniente deste inimigo por 2 turnos. Pode usar FOR ao invés de DES.',
       despertar: {
-        ativado: false,
+        ativado: true,
         nome: 'Needle',
-        descricao:
-          'Aumenta o range dos ataques,\n podendo perfurar inimigos a longa distancia(10m).'
+        descricao: 'As pontas dos dedos de Musashi projetam lâminas ficas parecendo agulhas. O alcance de seu ataque aumenta para 50m.'
       },
       dominio: {
         ativado: false,
-        nome: 'Death Mark / King of the World',
-        area: '1 pessoa / 500m',
+        nome: 'King of the World',
+        area: '500m',
         descricao:
-          'Death Mark:\n Marca inimigo com um simbolo de Coroa.\n Se receber um golpe neste local o inimigo fica paralizado por 1 turno.\n Pode usar até 3 vezes no mesmo inimigo.\n King of the World:\n Ninguem pode utilzar o dominio na area alem de Musashi.\n Dobra FOR e DES'
+          'Desfaz todos os dominios e nimguem pode utilzar o dominio na area alem de Musashi.Todos os inimigos recebem 5 marcas extras. Dobra FOR e DES.'
       }
     },
     stage: {
@@ -73,7 +72,17 @@ export const vigias: IFichaGeneric[] = [
       equipamento: [],
       mochila: []
     },
-    habilidades: []
+    habilidades: [
+      {
+        id: 1,
+        nome: 'Agulha',
+        requisitos: 'nenhum',
+        tipo: 'ataque',
+        dados: '1d6+FOR',
+        efeitos: 'atordoar(1turno)',
+        descricao: 'ataca o inimigo com a ponta dos dedos',
+        cd: 0
+      },]
   },
   {
     id: '2',

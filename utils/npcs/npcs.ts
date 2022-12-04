@@ -647,10 +647,10 @@ export const NPCS: IFichaGeneric[] = [
         nivel: 6,
         informacoes: {
           idade: 16,
-          aparencia: '',
-          personalidade: '',
-          historia: '',
-          profissao: ''
+          aparencia: 'Ela tem cabelos curtos, cacheados, ruivos e olhos azuis. 164m. Tem um pequeno piercing na sobrancelha direita.',
+          personalidade: 'Fica entediada fácial, ela gosta de coletar coisas fofas.',
+          historia: 'Foi escolhida como',
+          profissao: 'Artista protetora de kallitéchnis'
         },
         cidadeNatal: 'cidade dos rabiscos'
       }
@@ -678,7 +678,7 @@ export const NPCS: IFichaGeneric[] = [
       nome: 'Pincel',
       historia: '',
       descricao:
-        'O pincel pode se tornar qualquer utensilio para arte.\n As artes feitas funcionam como um encantamento no local onde foram feitas. O encantamento depende do desejo que se tinha quando foi feito',
+        'O pincel pode se tornar qualquer ferramenta para arte.\n As artes feitas funcionam como um encantamento no local onde foram feitas. O encantamento depende do desejo que se tinha quando foi feito',
       despertar: {
         ativado: false,
         nome: 'Mestre da Arte',
@@ -841,6 +841,100 @@ export const NPCS: IFichaGeneric[] = [
       dano: 0,
       armadura: 2,
       bonusArm: 0
+    },
+    inventario: {
+      equipamento: [],
+      mochila: []
+    },
+    habilidades: []
+  },
+  {
+    id: '17',
+    info: {
+      personagem: {
+        nome: 'Hendriksen',
+        nivel: 6,
+        informacoes: {
+          idade: 41,
+          aparencia: 'Ele tem cabelos curtos, cacheados e castanhos e olhos castanhos. 182cm. Veste uma roupa completamente laranja.',
+          personalidade: `sádico`,
+          historia: ``,
+          profissao: 'chefão dos mafiosos'
+        },
+        cidadeNatal: 'cidade da meia noite'
+      }
+    },
+    atributos: {
+      FORCA: 12,
+      bonusFOR: 0,
+      DESTREZA: 12,
+      bonusDES: 0,
+      SAUDE: 10,
+      bonusSAU: 0,
+      MENTE: 12,
+      bonusMEN: 0,
+      CARISMA: 16,
+      bonusCAR: 0
+    },
+    vida: {
+      vida: 34,
+      dano: 0,
+      armadura: 0,
+      bonusArm: 0
+    },
+    inventario: {
+      equipamento: [],
+      mochila: []
+    },
+    habilidades: []
+  },
+  {
+    id: '18',
+    info: {
+      personagem: {
+        nome: 'Ryia',
+        nivel: 3,
+        informacoes: {
+          idade: 32,
+          aparencia:
+            'Ela tem cabelos castanhos muito longos, lisos, raspados dos dois lados e olhos castanhos. Tem um rosto redondo e glamoroso. 172 de altura. Ela manca levemente.',
+          personalidade: 'calma e distraida',
+          historia:
+            'saiu de kallitéchnis(cidade dos rabiscos) em busca de condições de vida melhores.',
+          profissao: 'tatuadora'
+        },
+        cidadeNatal: 'cidade da meia noite'
+      }
+    },
+    atributos: {
+      FORCA: 10,
+      bonusFOR: 0,
+      DESTREZA: 14,
+      bonusDES: 0,
+      SAUDE: 10,
+      bonusSAU: 0,
+      MENTE: 10,
+      bonusMEN: 0,
+      CARISMA: 16,
+      bonusCAR: 0,
+      afinidade: 3
+    },
+    vida: {
+      vida: 26,
+      dano: 0,
+      armadura: 0,
+      bonusArm: 0
+    },
+    reliquia: {
+      nome: 'Maquina de tatuagem',
+      historia: '',
+      descricao:
+        'pode escolher um número de anos, meses, dias, horas, minutos ou segundos. a tatuagem com esse número pode inibir alguma função de seu portador.',
+      despertar: {
+        ativado: false,
+        nome: '',
+        descricao: ''
+      }
     },
     inventario: {
       equipamento: [],

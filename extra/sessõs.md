@@ -15,11 +15,13 @@
 
 ## Sessão 2
 
--
+- Heloisa colocou grama no Nariz
+- Arthur treinou com Jack e foi até a "prisão".
 
 ## Sessão 3
 
 - Julian recebeu um cartão de "indenização dos vigias", quando entregue ao prefeito, garante concerto em qualquer coisa prejudicada.
+- Xavier se tornou careca.
 - Ajudaram a dona do Cabaré a resolver o problema com os Mafiosos
 - Chefe detido, 3 capangas detidos e 1 capanga morto.
 - Interrogando o chefe descobriram que ele possuia um cartão de "indenização dos vigias", que foi entregue por um homem

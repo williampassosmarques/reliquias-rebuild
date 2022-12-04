@@ -30,5 +30,5 @@ Consume são habilidades extras assim como Stages, mas ao invés de serem conced
 
 ### Gain
 
-- Dobra o valor de um atributo
+- Dobra o valor de um atributo durante um dia.
 - Consome 30 de durabilidade e metade dos pontos de vida maximos.
